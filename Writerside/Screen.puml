@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+title Gra wzorowana na "Space Invaders" - diagram klas
+
+abstract class Screen
+class InstructionScreen
+class GameScreen
+class GameOverScreen
+class ScoreScreen
+
+Screen <|-- InstructionScreen
+Screen <|-- GameScreen
+Screen <|-- GameOverScreen
+Screen <|-- ScoreScreen
+
+class Player
+
+class Star
+class Tech
+class RectStar
+
+Star <|-- Tech
+Star <|-- RectStar
+
+abstract class Bullet
+class SuperBullet
+class SpaceBullet
+class AlienBullet
+
+Bullet <|-- SuperBullet
+Bullet <|-- SpaceBullet
+Bullet <|-- AlienBullet
+
+abstract class Alien
+class AlienLaunch
+class AlienTrans
+class Medkit
+class AlienTrain
+
+Alien <|-- AlienLaunch
+Alien <|-- AlienTrans
+Alien <|-- Medkit
+Alien <|-- AlienTrain
+
+@enduml
