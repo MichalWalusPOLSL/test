@@ -14,7 +14,7 @@ Gracz steruje myszką statkiem kosmicznym, statek podąża za kursorem i zmienia
 <procedure title="Ruch statkiem" id="inject-a-procedure">
     <step>
         <p>Za pomocą myszki użytkownik porusza się statkiem po planszy.</p>
-        <img src="spaceship.png" alt="zdj. 1" />
+        <img src="spaceship.png" alt="zdj. 1" width = "200" height = "200"/>
     </step>
     <step>
            <p>Strzelanie zwykłymi pociskami odbywa się za pomocą <shortcut>Lewy przycisk myszki</shortcut></p>
