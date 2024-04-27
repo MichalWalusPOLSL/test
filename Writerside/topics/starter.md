@@ -94,8 +94,10 @@ Każdy wyświetlany ekran dziedziczy po klasie Screen. Klasa Bullet ma trzy klas
         <p><strong>pygame</strong>: najważniejsza biblioteka projektu, pozwala zaimplementować system wyświetlania, kolizji</p>
     </step>
     <step>
-           <p><strong>vlc</strong>: pozwala w łatwy sposób odtworzyć muzykę pobraną do pliku
-               <strong>pytube</strong>: pobiera muzykę z serwisu YouTube (muzyka jest usuwana pod koniec działania programu)</p>
+           <p><strong>vlc</strong>: pozwala w łatwy sposób odtworzyć muzykę pobraną do pliku</p>
+    </step>
+    <step>
+            <p><strong>pytube</strong>: pobiera muzykę z serwisu YouTube (muzyka jest usuwana pod koniec działania programu)</p>
     </step>
      <step>
            <p><strong>pathlib</strong>: biblioteka do manipulacji plikami</p>
