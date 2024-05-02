@@ -16,7 +16,6 @@ Screen <|-- GameOverScreen
 Screen <|-- ScoreScreen
 
 class Player
-GameScreen *-- Player
 
 class Star
 class Tech

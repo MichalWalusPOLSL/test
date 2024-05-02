@@ -14,7 +14,7 @@ Gracz steruje myszką statkiem kosmicznym, statek podąża za kursorem i zmienia
 <procedure title="Ruch statkiem" id="inject-a-procedure">
     <step>
         <p>Za pomocą myszki użytkownik porusza się statkiem po planszy.</p>
-        <img src="spaceship.png" alt="zdj. 1" width = "200" height = "200"/>
+        <img src="spaceship.png" alt="zdj. 1" />
     </step>
     <step>
            <p>Strzelanie zwykłymi pociskami odbywa się za pomocą <shortcut>Lewy przycisk myszki</shortcut></p>
@@ -85,19 +85,18 @@ W dosyć rzadkim przypadku (1 cykl pętli na 1000) na mapie może pojawić się 
 </procedure>
 
 ### Techniki obiektowe
-Realizacja polimorfizmu odbędzie się za pomocą klas dotyczących kosmitów (AlienLaunch, AlienTrans, AlienTrain).
-
-Każdy wyświetlany ekran dziedziczy po klasie Screen. Klasa Bullet ma trzy klasy potomne.
+Program jest podzielony na moduły. Biblioteka pathlib (odpowiednik filesystemu) pozwala na tworzenie plików a następnie
+edytowanie ich w określony sposób. Jest to używane aby wspomóc bibliotekę pandas w obsłudze tablicy wyników.
+Pobieranie muzyki odbywa się w tle (za pomocą wątku) aby użytkownik nie musiał na nią czekać. Poprawność nicku gracza
+jest sprawdzana za pomocą regexu.
 
 <procedure title="Biblioteki dołączone w celu rozszerzenia funkcjonalności" id="inject-a-procedure2">
     <step>
         <p><strong>pygame</strong>: najważniejsza biblioteka projektu, pozwala zaimplementować system wyświetlania, kolizji</p>
     </step>
     <step>
-           <p><strong>vlc</strong>: pozwala w łatwy sposób odtworzyć muzykę pobraną do pliku</p>
-    </step>
-    <step>
-            <p><strong>pytube</strong>: pobiera muzykę z serwisu YouTube (muzyka jest usuwana pod koniec działania programu)</p>
+           <p><strong>vlc</strong>: pozwala w łatwy sposób odtworzyć muzykę pobraną do pliku
+               <strong>pytube</strong>: pobiera muzykę z serwisu YouTube (muzyka jest usuwana pod koniec działania programu)</p>
     </step>
      <step>
            <p><strong>pathlib</strong>: biblioteka do manipulacji plikami</p>
@@ -112,6 +111,9 @@ Każdy wyświetlany ekran dziedziczy po klasie Screen. Klasa Bullet ma trzy klas
 
 ### Struktury danych
 Zadecydowano, że najlepszym rozwiązaniem będzie zastosowanie Python Lists ze względu na ich uniwersalność i dosyć dobrą wydajność.
+
+W oknie odpowiadającemu właściwej rozgrywce umieszczono trzy główne listy przechowujące kolejno: kosmitów, pociski,
+apteczki.
 
 ### Diagram najważniejszych klas
 ![zdj. 11](ClassDiagram.png){ width=400 }
